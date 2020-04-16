@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="This sentence will appear under the link in search engine results.">
+	<meta name="keywords" content="list,of,words,separated,by,commas,that,describe,your,site">
+	<meta name="author" content="Your name goes here">
+
+	<!-- viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- shiv which should be a shim -->
+    <!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<![endif]-->
+
+	<!-- tab title -->
+	<title>[Page Title Which Appears in the Tab]</title>
+
+	<!-- favicon link -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+
+	<!-- stylesheets -->
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+
+    <!-- slicknav -->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>   <!-- Link to jQuery Content Delivery Network - Necessary for SlickNav to work correctly -->
+    <script src="js/jquery.slicknav.min.js"></script>                     <!-- Link to the slicknav file inside the js folder - Necessary for SlickNav to work correctly -->
+
+	<!-- slicknav javascript - this javascript code will use the UL inside the nav_menu tag to build the same menu in slickNav format -->
+	<script type="text/javascript">
+    	$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+    	});
+    </script>
+
+</head>
+
+
+
+<body>
+
+	<header>
+
+		<img class="clearfix" src="images/logo.png">
+
+		<h2>[Page Title]</h2>
+
+		<h3><span class="shadow">Shadow Sample</span></h3>
+
+	</header>
+
+
+    <nav id="mobilemenu"></nav>
+	<nav id="nav_menu">
+    	<ul>
+        	<li><a href="index.html" class="current">Home</a></li>
+        	<li><a href="index.html" class="current">Products</a></li>
+			<li><a href="index.html" class="current">About</a>
+			<ul>
+				<li><a href="index.html">About Me</a></li>
+				<li><a href="index.html">About You</a></li>
+				<li><a href="index.html">About Us</a></li>
+			</ul>
+			</li>
+        	<li><a href="index.html" class="current">Contact</a></li>
+    	</ul>
+	</nav>
+
+
+	<main>
+
+		<h1>descriptive words</h1>
+
+		<section>
+			<p>this is my section</p>
+
+			<p>this is my section too</p>
+
+			<p>this is my section with some lorum ipsum: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis viverra consequat pellentesque. Quisque convallis sem sit amet urna fermentum, nec placerat sapien iaculis. Donec ultrices sodales commodo. Mauris malesuada ante id gravida porta. Mauris placerat orci tortor, pulvinar venenatis ex ornare rutrum. Proin ante ligula, cursus eu libero eget, pulvinar dignissim diam. Aenean blandit felis efficitur, tempor dolor vitae, aliquam nulla. Proin iaculis facilisis lobortis. Praesent at bibendum justo, a maximus velit. Aenean lacinia pulvinar nunc, vel bibendum urna hendrerit et. Nulla in augue in tortor imperdiet semper a ac nibh. Donec commodo arcu sed varius lobortis.</p>
+
+			<p>Sed tincidunt purus sit amet sapien congue tincidunt. Vestibulum aliquet mi ac magna sagittis mollis. Donec quis quam a erat pretium sollicitudin. Integer id enim vitae eros dapibus rutrum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam vel libero orci. Aliquam vitae laoreet enim, suscipit sollicitudin turpis.</p>
+
+			<p>this is my section toooo</p>
+
+			
+
+		</section>
+
+		<aside>
+
+			<p>this is my aside</p>
+
+			<p>this is also my aside</p>
+
+			<p>this is still my aside</p>
+
+			<p>this is my aside continued</p>
+
+		</aside>
+
+		<div id="bottombuffer"><br><br></div>
+
+	</main>
+
+
+	<footer>
+
+		<p>&copy; 2020 Your Company Name here</p>
+
+	</footer>
+
+</body>
+
+</html>
